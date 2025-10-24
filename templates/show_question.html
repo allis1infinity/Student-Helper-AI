@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block title %}<Title>Student Helper – Welcome</Title>{% endblock %}
+
+{% block content %}
+
+    <div>
+        <h4>
+            Question {{ current_index + 1 }} from {{ total_questions }}
+        </h4>
+        <div>
+            {{ question.question_text }}
+        </div>
+        <form >
+            <input type="hidden" name="question_id" value="{{ question.id }}">
+
+            <div class="options">
+                {% set options = [question.option_a, question.option_b, question.option_c, question.option_d] %}
+                {% for option in options %}
+                <label>
+                    <input type="radio"
+                           name="user_answer"
+                           value="{{ option }}"
+                           required>
+                    <span>{{ option }}</span>
+                </label>
+                <br>
+                {% endfor %}
+            </div>
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+
+    </div>
+{% endblock %}

@@ -1,0 +1,1002 @@
+[
+  {
+    "id": 1,
+    "question_text": "Solve the equation: $\\frac{x}{3} + \\frac{x}{2} = 5$.",
+    "option_a": "1",
+    "option_b": "3",
+    "option_c": "6",
+    "option_d": "10",
+    "correct_option": "C",
+    "topic": "Linear Equations"
+  },
+  {
+    "id": 2,
+    "question_text": "Find the derivative of the function $f(x) = 3x^2 - 4x + 1$ at the point $x_0 = 2$.",
+    "option_a": "5",
+    "option_b": "8",
+    "option_c": "10",
+    "option_d": "2",
+    "correct_option": "B",
+    "topic": "Derivative"
+  },
+  {
+    "id": 3,
+    "question_text": "The area of a rectangle is $48\\text{ cm}^2$. One of its sides is 8 cm. Find the perimeter of the rectangle.",
+    "option_a": "14 cm",
+    "option_b": "28 cm",
+    "option_c": "32 cm",
+    "option_d": "24 cm",
+    "correct_option": "B",
+    "topic": "Planometry"
+  },
+  {
+    "id": 4,
+    "question_text": "Calculate: $\\log_2 16 + \\log_3 9$.",
+    "option_a": "5",
+    "option_b": "6",
+    "option_c": "8",
+    "option_d": "4",
+    "correct_option": "B",
+    "topic": "Logarithms"
+  },
+  {
+    "id": 5,
+    "question_text": "Indicate the interval to which the root of the equation $\\sqrt{x-2} = 3$ belongs.",
+    "option_a": "$[2; 5)$",
+    "option_b": "$[5; 8)$",
+    "option_c": "$[8; 11]$",
+    "option_d": "$(11; 15]$",
+    "correct_option": "C",
+    "topic": "Irrational Equations"
+  },
+  {
+    "id": 6,
+    "question_text": "Simplify the expression: $(a+3)^2 - a(a+6)$.",
+    "option_a": "9",
+    "option_b": "$6a+9$",
+    "option_c": "$a^2+9$",
+    "option_d": "$6a-9$",
+    "correct_option": "A",
+    "topic": "Polynomials"
+  },
+  {
+    "id": 7,
+    "question_text": "Find the sixth term of the arithmetic progression if $a_1=5$ and $d=-3$.",
+    "option_a": "$2$",
+    "option_b": "$-10$",
+    "option_c": "$-7$",
+    "option_d": "$5$",
+    "correct_option": "B",
+    "topic": "Arithmetic Progression"
+  },
+  {
+    "id": 8,
+    "question_text": "The base angle of an isosceles triangle is $50^\\circ$. Find the vertex angle.",
+    "option_a": "$130^\\circ$",
+    "option_b": "$80^\\circ$",
+    "option_c": "$100^\\circ$",
+    "option_d": "$50^\\circ$",
+    "correct_option": "B",
+    "topic": "Planometry"
+  },
+  {
+    "id": 9,
+    "question_text": "Calculate the value of the expression: $\\sin(\\frac{\\pi}{6}) + \\cos(\\frac{\\pi}{3})$.",
+    "option_a": "$1$",
+    "option_b": "$0$",
+    "option_c": "$\\sqrt{3}$",
+    "option_d": "$\\frac{1}{2}$",
+    "correct_option": "A",
+    "topic": "Trigonometry"
+  },
+  {
+    "id": 10,
+    "question_text": "What is the probability of rolling an even number on a standard six-sided die?",
+    "option_a": "$\\frac{1}{6}$",
+    "option_b": "$\\frac{1}{3}$",
+    "option_c": "$\\frac{1}{2}$",
+    "option_d": "$\\frac{2}{3}$",
+    "correct_option": "C",
+    "topic": "Probability Theory"
+  },
+  {
+    "id": 11,
+    "question_text": "Solve the inequality: $3x - 4 < 2x + 1$.",
+    "option_a": "$x > 5$",
+    "option_b": "$x < 5$",
+    "option_c": "$x < -5$",
+    "option_d": "$x > -5$",
+    "correct_option": "B",
+    "topic": "Inequalities"
+  },
+  {
+    "id": 12,
+    "question_text": "Find the domain of the function $y = \\log_5(x-3)$.",
+    "option_a": "$x \\in (3; \\infty)$",
+    "option_b": "$x \\in [3; \\infty)$",
+    "option_c": "$x \\in (0; \\infty)$",
+    "option_d": "$x \\in (-\\infty; 3)$",
+    "correct_option": "A",
+    "topic": "Logarithms"
+  },
+  {
+    "id": 13,
+    "question_text": "The volume of a cube is $64\\text{ cm}^3$. Find the area of one of its faces.",
+    "option_a": "$4\\text{ cm}^2$",
+    "option_b": "$8\\text{ cm}^2$",
+    "option_c": "$16\\text{ cm}^2$",
+    "option_d": "$32\\text{ cm}^2$",
+    "correct_option": "C",
+    "topic": "Stereometry"
+  },
+  {
+    "id": 14,
+    "question_text": "How many roots does the equation $|x-4| = 2$ have?",
+    "option_a": "One",
+    "option_b": "Two",
+    "option_c": "None",
+    "option_d": "Three",
+    "correct_option": "B",
+    "topic": "Absolute Value Equations"
+  },
+  {
+    "id": 15,
+    "question_text": "Find the value of the expression: $3^{2} \\cdot 3^{-1} \\cdot 3^4$.",
+    "option_a": "$3^8$",
+    "option_b": "$3^5$",
+    "option_c": "$3^{-2}$",
+    "option_d": "$3^6$",
+    "correct_option": "B",
+    "topic": "Exponents"
+  },
+  {
+    "id": 16,
+    "question_text": "The diagonal of a rectangle is 13 cm, and one of its sides is 5 cm. Find the length of the other side.",
+    "option_a": "12 cm",
+    "option_b": "8 cm",
+    "option_c": "9 cm",
+    "option_d": "10 cm",
+    "correct_option": "A",
+    "topic": "Planometry"
+  },
+  {
+    "id": 17,
+    "question_text": "Indicate the interval on which the function $f(x) = x^2 - 6x + 8$ is decreasing.",
+    "option_a": "$(- \\infty; 3]$",
+    "option_b": "$[3; \\infty)$",
+    "option_c": "$[4; \\infty)$",
+    "option_d": "$(- \\infty; 2]$",
+    "correct_option": "A",
+    "topic": "Quadratic Function"
+  },
+  {
+    "id": 18,
+    "question_text": "Simplify the fraction: $\\frac{x^2 - 9}{x+3}$.",
+    "option_a": "$x+3$",
+    "option_b": "$x-3$",
+    "option_c": "$\\frac{x-3}{x+3}$",
+    "option_d": "$3-x$",
+    "correct_option": "B",
+    "topic": "Rational Expressions"
+  },
+  {
+    "id": 19,
+    "question_text": "Find the sum of the roots of the equation $x^2 - 7x + 10 = 0$.",
+    "option_a": "$-10$",
+    "option_b": "$7$",
+    "option_c": "$-7$",
+    "option_d": "$-3$",
+    "correct_option": "B",
+    "topic": "Vieta's Formulas"
+  },
+  {
+    "id": 20,
+    "question_text": "Calculate the integral $\\int_1^2 (2x + 1) dx$.",
+    "option_a": "$4$",
+    "option_b": "$3$",
+    "option_c": "$5$",
+    "option_d": "$2$",
+    "correct_option": "A",
+    "topic": "Integral"
+  },
+  {
+    "id": 21,
+    "question_text": "Find the zeros of the function $f(x) = 2x - 8$.",
+    "option_a": "$x=8$",
+    "option_b": "$x=-4$",
+    "option_c": "$x=4$",
+    "option_d": "$x=0$",
+    "correct_option": "C",
+    "topic": "Linear Function"
+  },
+  {
+    "id": 22,
+    "question_text": "Calculate the value of the expression: $3\\cos(0) - 2\\sin(\\frac{\\pi}{2})$.",
+    "option_a": "$1$",
+    "option_b": "$2$",
+    "option_c": "$3$",
+    "option_d": "$0$",
+    "correct_option": "A",
+    "topic": "Trigonometry"
+  },
+  {
+    "id": 23,
+    "question_text": "Two cars started simultaneously towards each other. The speed of the first is $60\\text{ km/h}$, and the second is $80\\text{ km/h}$. In how many hours will they meet if the distance between them is 280 km?",
+    "option_a": "$1.5\\text{ h}$",
+    "option_b": "$2\\text{ h}$",
+    "option_c": "$2.5\\text{ h}$",
+    "option_d": "$3\\text{ h}$",
+    "correct_option": "B",
+    "topic": "Word Problems"
+  },
+  {
+    "id": 24,
+    "question_text": "The radius of the cylinder's base is 3 cm, and the height is 4 cm. Find the lateral surface area of the cylinder.",
+    "option_a": "$12\\pi\\text{ cm}^2$",
+    "option_b": "$24\\pi\\text{ cm}^2$",
+    "option_c": "$18\\pi\\text{ cm}^2$",
+    "option_d": "$36\\pi\\text{ cm}^2$",
+    "correct_option": "B",
+    "topic": "Stereometry"
+  },
+  {
+    "id": 25,
+    "question_text": "Which inequality is correct?",
+    "option_a": "$2^{-3} > 2^{-2}$",
+    "option_b": "$(\\frac{1}{3})^{4} < (\\frac{1}{3})^{5}$",
+    "option_c": "$0.5^2 < 0.5^3$",
+    "option_d": "$3^{\\sqrt{2}} < 3^{1.5}$",
+    "correct_option": "D",
+    "topic": "Exponential Inequalities"
+  },
+  {
+    "id": 26,
+    "question_text": "Determine the number of integer solutions to the inequality $-1 < \\frac{x}{2} \\le 3$.",
+    "option_a": "$4$",
+    "option_b": "$6$",
+    "option_c": "$8$",
+    "option_d": "$7$",
+    "correct_option": "C",
+    "topic": "Inequalities"
+  },
+  {
+    "id": 27,
+    "question_text": "Find the common ratio of the geometric progression if $b_1 = 4$ and $b_3 = 36$.",
+    "option_a": "$3$",
+    "option_b": "$9$",
+    "option_c": "$6$",
+    "option_d": "$2$",
+    "correct_option": "A",
+    "topic": "Geometric Progression"
+  },
+  {
+    "id": 28,
+    "question_text": "For what value of $k$ are the graphs of the functions $y = 2x - 3$ and $y = kx + 5$ parallel?",
+    "option_a": "$k=-3$",
+    "option_b": "$k=5$",
+    "option_c": "$k=2$",
+    "option_d": "$k=-2$",
+    "correct_option": "C",
+    "topic": "Functions"
+  },
+  {
+    "id": 29,
+    "question_text": "What is $\\sin\\alpha$ if $\\cos\\alpha = 0.6$ and $\\alpha$ is an acute angle?",
+    "option_a": "$0.8$",
+    "option_b": "$0.4$",
+    "option_c": "$0.9$",
+    "option_d": "$0.7$",
+    "correct_option": "A",
+    "topic": "Trigonometry"
+  },
+  {
+    "id": 30,
+    "question_text": "The number of ways to choose 3 students out of 7 for an Olympiad.",
+    "option_a": "35",
+    "option_b": "210",
+    "option_c": "140",
+    "option_d": "70",
+    "correct_option": "A",
+    "topic": "Combinatorics"
+  },
+  {
+    "id": 31,
+    "question_text": "Simplify the expression: $\\sqrt{(2 - \\sqrt{5})^2} + \\sqrt{5}$.",
+    "option_a": "$2$",
+    "option_b": "$2\\sqrt{5} - 2$",
+    "option_c": "$4$",
+    "option_d": "$2\\sqrt{5}$",
+    "correct_option": "A",
+    "topic": "Roots and Radicals"
+  },
+  {
+    "id": 32,
+    "question_text": "Solve the equation: $4^{x-1} = 16$.",
+    "option_a": "$x=2$",
+    "option_b": "$x=3$",
+    "option_c": "$x=5$",
+    "option_d": "$x=4$",
+    "correct_option": "B",
+    "topic": "Exponential Equations"
+  },
+  {
+    "id": 33,
+    "question_text": "Find the area of a circle if its diameter is 10 cm.",
+    "option_a": "$25\\pi\\text{ cm}^2$",
+    "option_b": "$100\\pi\\text{ cm}^2$",
+    "option_c": "$10\\pi\\text{ cm}^2$",
+    "option_d": "$50\\pi\\text{ cm}^2$",
+    "correct_option": "A",
+    "topic": "Planometry"
+  },
+  {
+    "id": 34,
+    "question_text": "What is $\\log_{4} 64$ equal to?",
+    "option_a": "$2$",
+    "option_b": "$3$",
+    "option_c": "$4$",
+    "option_d": "$16$",
+    "correct_option": "B",
+    "topic": "Logarithms"
+  },
+  {
+    "id": 35,
+    "question_text": "Find the sum of the roots of the equation $x^3 - 4x = 0$.",
+    "option_a": "$0$",
+    "option_b": "$2$",
+    "option_c": "$-2$",
+    "option_d": "$4$",
+    "correct_option": "A",
+    "topic": "Higher-Degree Equations"
+  },
+  {
+    "id": 36,
+    "question_text": "In a right triangle, the legs are 6 cm and 8 cm. Find the length of the hypotenuse.",
+    "option_a": "10 cm",
+    "option_b": "12 cm",
+    "option_c": "14 cm",
+    "option_d": "16 cm",
+    "correct_option": "A",
+    "topic": "Pythagorean Theorem"
+  },
+  {
+    "id": 37,
+    "question_text": "Calculate: $\\frac{2}{3} + \\frac{1}{6}$.",
+    "option_a": "$\\frac{1}{2}$",
+    "option_b": "$\\frac{5}{6}$",
+    "option_c": "$\\frac{3}{9}$",
+    "option_d": "$\\frac{4}{6}$",
+    "correct_option": "B",
+    "topic": "Fractions"
+  },
+  {
+    "id": 38,
+    "question_text": "Which number does not belong to the domain of the function $f(x) = \\frac{1}{x-5}$?",
+    "option_a": "$0$",
+    "option_b": "$5$",
+    "option_c": "$-5$",
+    "option_d": "$1$",
+    "correct_option": "B",
+    "topic": "Functions"
+  },
+  {
+    "id": 39,
+    "question_text": "Find the volume of a pyramid whose base area is $15\\text{ cm}^2$ and height is 4 cm.",
+    "option_a": "$20\\text{ cm}^3$",
+    "option_b": "$60\\text{ cm}^3$",
+    "option_c": "$15\\text{ cm}^3$",
+    "option_d": "$30\\text{ cm}^3$",
+    "correct_option": "A",
+    "topic": "Stereometry"
+  },
+  {
+    "id": 40,
+    "question_text": "Solve the inequality: $x^2 \\le 4$.",
+    "option_a": "$x \\in [-2; 2]$",
+    "option_b": "$x \\in (-\\infty; -2] \\cup [2; \\infty)$",
+    "option_c": "$x \\in (-\\infty; 2]$",
+    "option_d": "$x \\in [-4; 4]$",
+    "correct_option": "A",
+    "topic": "Quadratic Inequalities"
+  },
+  {
+    "id": 41,
+    "question_text": "The perimeter of a rhombus is 40 cm. Find the length of its side.",
+    "option_a": "10 cm",
+    "option_b": "20 cm",
+    "option_c": "8 cm",
+    "option_d": "5 cm",
+    "correct_option": "A",
+    "topic": "Planometry"
+  },
+  {
+    "id": 42,
+    "question_text": "Find the arithmetic mean of the numbers 4, 7, 9, 10.",
+    "option_a": "$6.5$",
+    "option_b": "$7.5$",
+    "option_c": "$8$",
+    "option_d": "$9$",
+    "correct_option": "B",
+    "topic": "Statistics"
+  },
+  {
+    "id": 43,
+    "question_text": "Solve the equation: $\\log_x 25 = 2$.",
+    "option_a": "$x=5$",
+    "option_b": "$x=2$",
+    "option_c": "$x=10$",
+    "option_d": "$x=25$",
+    "correct_option": "A",
+    "topic": "Logarithms"
+  },
+  {
+    "id": 44,
+    "question_text": "Convert $\\frac{3\\pi}{4}$ radians to degrees.",
+    "option_a": "$120^\\circ$",
+    "option_b": "$135^\\circ$",
+    "option_c": "$150^\\circ$",
+    "option_d": "$270^\\circ$",
+    "correct_option": "B",
+    "topic": "Trigonometry"
+  },
+  {
+    "id": 45,
+    "question_text": "Find the lateral surface area of a cone if its radius is 3 cm and its slant height is 5 cm.",
+    "option_a": "$15\\pi\\text{ cm}^2$",
+    "option_b": "$24\\pi\\text{ cm}^2$",
+    "option_c": "$30\\pi\\text{ cm}^2$",
+    "option_d": "$8\\pi\\text{ cm}^2$",
+    "correct_option": "A",
+    "topic": "Stereometry"
+  },
+  {
+    "id": 46,
+    "question_text": "Determine which function is even.",
+    "option_a": "$y=x^3$",
+    "option_b": "$y=x^2-1$",
+    "option_c": "$y=2x+1$",
+    "option_d": "$y=\\sin x$",
+    "correct_option": "B",
+    "topic": "Functions"
+  },
+  {
+    "id": 47,
+    "question_text": "How many integers are in the interval $(-2; 3]$?",
+    "option_a": "$4$",
+    "option_b": "$5$",
+    "option_c": "$6$",
+    "option_d": "$3$",
+    "correct_option": "B",
+    "topic": "Number Intervals"
+  },
+  {
+    "id": 48,
+    "question_text": "In which quadrant is the point $A(3; -4)$ located?",
+    "option_a": "I",
+    "option_b": "II",
+    "option_c": "III",
+    "option_d": "IV",
+    "correct_option": "D",
+    "topic": "Coordinate Plane"
+  },
+  {
+    "id": 49,
+    "question_text": "Solve the equation: $\\sin x = \\frac{1}{2}$.",
+    "option_a": "$x = \\frac{\\pi}{6} + 2\\pi n, n\\in \\mathbb{Z}$",
+    "option_b": "$x = \\frac{\\pi}{3} + 2\\pi n, n\\in \\mathbb{Z}$",
+    "option_c": "$x = \\pm \\frac{\\pi}{6} + 2\\pi n, n\\in \\mathbb{Z}$",
+    "option_d": "$x = (-1)^n \\frac{\\pi}{6} + \\pi n, n\\in \\mathbb{Z}$",
+    "correct_option": "D",
+    "topic": "Trigonometric Equations"
+  },
+  {
+    "id": 50,
+    "question_text": "Find the magnitude of the vector $\\vec{a}(3; -4)$.",
+    "option_a": "$7$",
+    "option_b": "$5$",
+    "option_c": "$1$",
+    "option_d": "$\\sqrt{7}$",
+    "correct_option": "B",
+    "topic": "Vectors"
+  },
+  {
+    "id": 51,
+    "question_text": "How many solutions does the system of equations have: $x+y=5$ and $2x+2y=10$?",
+    "option_a": "One",
+    "option_b": "Two",
+    "option_c": "Infinitely many",
+    "option_d": "None",
+    "correct_option": "C",
+    "topic": "Systems of Equations"
+  },
+  {
+    "id": 52,
+    "question_text": "Calculate: $\\sqrt[3]{8} \\cdot 4^{1/2}$.",
+    "option_a": "$4$",
+    "option_b": "$8$",
+    "option_c": "$6$",
+    "option_d": "$2$",
+    "correct_option": "A",
+    "topic": "Exponents and Roots"
+  },
+  {
+    "id": 53,
+    "question_text": "The area of a parallelogram is $30\\text{ cm}^2$, and its height is 6 cm. Find the length of the side to which this height is drawn.",
+    "option_a": "5 cm",
+    "option_b": "6 cm",
+    "option_c": "10 cm",
+    "option_d": "12 cm",
+    "correct_option": "A",
+    "topic": "Planometry"
+  },
+  {
+    "id": 54,
+    "question_text": "Which equation is the equation of a circle with center at $(1; -2)$ and radius $R=4$?",
+    "option_a": "$(x-1)^2 + (y+2)^2 = 4$",
+    "option_b": "$(x+1)^2 + (y-2)^2 = 16$",
+    "option_c": "$(x-1)^2 + (y+2)^2 = 16$",
+    "option_d": "$(x+1)^2 + (y-2)^2 = 4$",
+    "correct_option": "C",
+    "topic": "Analytical Geometry"
+  },
+  {
+    "id": 55,
+    "question_text": "Find the largest integer that is a solution to the inequality $2(x+3) < 10$.",
+    "option_a": "$2$",
+    "option_b": "$3$",
+    "option_c": "$4$",
+    "option_d": "$5$",
+    "correct_option": "B",
+    "topic": "Linear Inequalities"
+  },
+  {
+    "id": 56,
+    "question_text": "Calculate: $\\sin(120^\\circ)$.",
+    "option_a": "$\\frac{1}{2}$",
+    "option_b": "$-\\frac{1}{2}$",
+    "option_c": "$\\frac{\\sqrt{3}}{2}$",
+    "option_d": "$-\\frac{\\sqrt{3}}{2}$",
+    "correct_option": "C",
+    "topic": "Trigonometry"
+  },
+  {
+    "id": 57,
+    "question_text": "Find the first term of the geometric progression if $b_2 = 12$ and $q = 3$.",
+    "option_a": "$4$",
+    "option_b": "$3$",
+    "option_c": "$36$",
+    "option_d": "$9$",
+    "correct_option": "A",
+    "topic": "Geometric Progression"
+  },
+  {
+    "id": 58,
+    "question_text": "Calculate the area of a triangle, two sides of which are 6 cm and 10 cm, and the angle between them is $30^\\circ$.",
+    "option_a": "$15\\text{ cm}^2$",
+    "option_b": "$30\\text{ cm}^2$",
+    "option_c": "$60\\text{ cm}^2$",
+    "option_d": "$15\\sqrt{3}\\text{ cm}^2$",
+    "correct_option": "A",
+    "topic": "Planometry"
+  },
+  {
+    "id": 59,
+    "question_text": "Which point belongs to the graph of the function $y = x^2 - 1$?",
+    "option_a": "$(-1; 0)$",
+    "option_b": "$ (0; 1)$",
+    "option_c": "$ (2; 1)$",
+    "option_d": "$ (1; -1)$",
+    "correct_option": "A",
+    "topic": "Functions"
+  },
+  {
+    "id": 60,
+    "question_text": "Find the range of the function $y = 5 - x^2$.",
+    "option_a": "$[5; \\infty)$",
+    "option_b": "$ (-\\infty; 5]$",
+    "option_c": "$[0; 5]$",
+    "option_d": "$ (-\\infty; \\infty)$",
+    "correct_option": "B",
+    "topic": "Functions"
+  },
+  {
+    "id": 61,
+    "question_text": "Solve the equation: $\\log_5 (2x+1) = 1$.",
+    "option_a": "$x=1$",
+    "option_b": "$x=2$",
+    "option_c": "$x=3$",
+    "option_d": "$x=5$",
+    "correct_option": "B",
+    "topic": "Logarithmic Equations"
+  },
+  {
+    "id": 62,
+    "question_text": "Calculate $A_4^2$ (the number of permutations of 4 items taken 2 at a time).",
+    "option_a": "$6$",
+    "option_b": "$12$",
+    "option_c": "$24$",
+    "option_d": "$4$",
+    "correct_option": "B",
+    "topic": "Combinatorics"
+  },
+  {
+    "id": 63,
+    "question_text": "The volume of a regular triangular prism is $10\\sqrt{3}\\text{ cm}^3$, and the area of its base is $5\\sqrt{3}\\text{ cm}^2$. Find the height of the prism.",
+    "option_a": "$2\\text{ cm}$",
+    "option_b": "$5\\text{ cm}$",
+    "option_c": "$3\\text{ cm}$",
+    "option_d": "$4\\text{ cm}$",
+    "correct_option": "A",
+    "topic": "Stereometry"
+  },
+  {
+    "id": 64,
+    "question_text": "Simplify the expression: $(\\frac{1}{a} + \\frac{1}{b}) \\cdot ab$.",
+    "option_a": "$a+b$",
+    "option_b": "$a-b$",
+    "option_c": "$ab$",
+    "option_d": "$\\frac{a+b}{ab}$",
+    "correct_option": "A",
+    "topic": "Algebraic Fractions"
+  },
+  {
+    "id": 65,
+    "question_text": "Find the root of the equation: $\\frac{x-1}{2} = \\frac{x+2}{3}$.",
+    "option_a": "$x=7$",
+    "option_b": "$x=-7$",
+    "option_c": "$x=5$",
+    "option_d": "$x=1$",
+    "correct_option": "A",
+    "topic": "Linear Equations"
+  },
+  {
+    "id": 66,
+    "question_text": "Which statement is incorrect?",
+    "option_a": "All squares are rhombuses.",
+    "option_b": "The diagonals of a rectangle are equal.",
+    "option_c": "The diagonals of a rhombus are mutually perpendicular.",
+    "option_d": "All rhombuses are squares.",
+    "correct_option": "D",
+    "topic": "Planometry"
+  },
+  {
+    "id": 67,
+    "question_text": "Find the greatest value of the function $f(x) = 1 - 2x$ on the interval $[-1; 2]$.",
+    "option_a": "$-3$",
+    "option_b": "$3$",
+    "option_c": "$5$",
+    "option_d": "$1$",
+    "correct_option": "B",
+    "topic": "Functions"
+  },
+  {
+    "id": 68,
+    "question_text": "Calculate: $\\cos(\\frac{3\\pi}{2}) - \\sin(\\pi)$.",
+    "option_a": "$1$",
+    "option_b": "$0$",
+    "option_c": "$-1$",
+    "option_d": "$2$",
+    "correct_option": "B",
+    "topic": "Trigonometry"
+  },
+  {
+    "id": 69,
+    "question_text": "The circumference of a circle is $12\\pi$ cm. Find its radius.",
+    "option_a": "6 cm",
+    "option_b": "12 cm",
+    "option_c": "3 cm",
+    "option_d": "4 cm",
+    "correct_option": "A",
+    "topic": "Planometry"
+  },
+  {
+    "id": 70,
+    "question_text": "Find the sum of the first five terms of the arithmetic progression: 2, 5, 8, ...",
+    "option_a": "$35$",
+    "option_b": "$25$",
+    "option_c": "$40$",
+    "option_d": "$30$",
+    "correct_option": "C",
+    "topic": "Arithmetic Progression"
+  },
+  {
+    "id": 71,
+    "question_text": "Solve the inequality: $(\\frac{1}{2})^x > \\frac{1}{4}$.",
+    "option_a": "$x < 2$",
+    "option_b": "$x > 2$",
+    "option_c": "$x < -2$",
+    "option_d": "$x > -2$",
+    "correct_option": "A",
+    "topic": "Exponential Inequalities"
+  },
+  {
+    "id": 72,
+    "question_text": "Calculate the area of a trapezoid whose bases are 5 cm and 9 cm, and whose height is 4 cm.",
+    "option_a": "$28\\text{ cm}^2$",
+    "option_b": "$42\\text{ cm}^2$",
+    "option_c": "$36\\text{ cm}^2$",
+    "option_d": "$18\\text{ cm}^2$",
+    "correct_option": "A",
+    "topic": "Planometry"
+  },
+  {
+    "id": 73,
+    "question_text": "Find the root of the equation $\\log_3(x^2 - 8) = 1$.",
+    "option_a": "$x=1$",
+    "option_b": "$x=3$",
+    "option_c": "$x=\\pm 3$",
+    "option_d": "$x=9$",
+    "correct_option": "C",
+    "topic": "Logarithmic Equations"
+  },
+  {
+    "id": 74,
+    "question_text": "There are 5 white and 3 black balls in a box. What is the probability that a randomly drawn ball will be white?",
+    "option_a": "$\\frac{1}{5}$",
+    "option_b": "$\\frac{5}{8}$",
+    "option_c": "$\\frac{3}{8}$",
+    "option_d": "$\\frac{1}{8}$",
+    "correct_option": "B",
+    "topic": "Probability Theory"
+  },
+  {
+    "id": 75,
+    "question_text": "Find the derivative of the function $f(x) = \\sin(3x)$.",
+    "option_a": "$\\cos(3x)$",
+    "option_b": "$3\\cos(3x)$",
+    "option_c": "$-\\cos(3x)$",
+    "option_d": "$3\\sin(3x)$",
+    "correct_option": "B",
+    "topic": "Derivative"
+  },
+  {
+    "id": 76,
+    "question_text": "Simplify the expression: $(\\sqrt{7} - 2)(\\sqrt{7} + 2)$.",
+    "option_a": "$3$",
+    "option_b": "$5$",
+    "option_c": "$7$",
+    "option_d": "$11$",
+    "correct_option": "A",
+    "topic": "Algebraic Expressions"
+  },
+  {
+    "id": 77,
+    "question_text": "For what value of $a$ are the vectors $\\vec{u}(a; 2)$ and $\\vec{v}(4; 8)$ collinear?",
+    "option_a": "$a=1$",
+    "option_b": "$a=2$",
+    "option_c": "$a=4$",
+    "option_d": "$a=0.5$",
+    "correct_option": "A",
+    "topic": "Vectors"
+  },
+  {
+    "id": 78,
+    "question_text": "Find the volume of a sphere with a radius of 3 cm.",
+    "option_a": "$9\\pi\\text{ cm}^3$",
+    "option_b": "$36\\pi\\text{ cm}^3$",
+    "option_c": "$18\\pi\\text{ cm}^3$",
+    "option_d": "$12\\pi\\text{ cm}^3$",
+    "correct_option": "B",
+    "topic": "Stereometry"
+  },
+  {
+    "id": 79,
+    "question_text": "The sum of the interior angles of a convex pentagon is:",
+    "option_a": "$360^\\circ$",
+    "option_b": "$540^\\circ$",
+    "option_c": "$720^\\circ$",
+    "option_d": "$900^\\circ$",
+    "correct_option": "B",
+    "topic": "Planometry"
+  },
+  {
+    "id": 80,
+    "question_text": "Find the largest integer value of $x$ for which the expression $\\sqrt{7-x}$ is defined.",
+    "option_a": "$6$",
+    "option_b": "$7$",
+    "option_c": "$8$",
+    "option_d": "$5$",
+    "correct_option": "B",
+    "topic": "Domain"
+  },
+  {
+    "id": 81,
+    "question_text": "Solve the inequality: $x^2 - 5x + 6 > 0$.",
+    "option_a": "$x \\in (2; 3)$",
+    "option_b": "$x \\in (-\\infty; 2) \\cup (3; \\infty)$",
+    "option_c": "$x \\in (3; \\infty)$",
+    "option_d": "$x \\in (-\\infty; 2)$",
+    "correct_option": "B",
+    "topic": "Quadratic Inequalities"
+  },
+  {
+    "id": 82,
+    "question_text": "Indicate the function whose graph passes through the origin.",
+    "option_a": "$y=x^2-1$",
+    "option_b": "$y=2x+1$",
+    "option_c": "$y=\\cos x$",
+    "option_d": "$y=5x$",
+    "correct_option": "D",
+    "topic": "Functions"
+  },
+  {
+    "id": 83,
+    "question_text": "The value of the expression $\\log_5 50 - \\log_5 2$ is:",
+    "option_a": "$1$",
+    "option_b": "$2$",
+    "option_c": "$5$",
+    "option_d": "$10$",
+    "correct_option": "B",
+    "topic": "Logarithms"
+  },
+  {
+    "id": 84,
+    "question_text": "Calculate the surface area of a rectangular prism with dimensions 2 cm, 3 cm, 4 cm.",
+    "option_a": "$24\\text{ cm}^2$",
+    "option_b": "$26\\text{ cm}^2$",
+    "option_c": "$52\\text{ cm}^2$",
+    "option_d": "$64\\text{ cm}^2$",
+    "correct_option": "C",
+    "topic": "Stereometry"
+  },
+  {
+    "id": 85,
+    "question_text": "Which number is irrational?",
+    "option_a": "$\\sqrt{4}$",
+    "option_b": "$0.3$",
+    "option_c": "$\\pi$",
+    "option_d": "$-\\frac{1}{2}$",
+    "correct_option": "C",
+    "topic": "Numbers"
+  },
+  {
+    "id": 86,
+    "question_text": "Solve the equation: $\\cos x = -1$.",
+    "option_a": "$x = \\pi n, n\\in \\mathbb{Z}$",
+    "option_b": "$x = 2\\pi n, n\\in \\mathbb{Z}$",
+    "option_c": "$x = \\pi + 2\\pi n, n\\in \\mathbb{Z}$",
+    "option_d": "$x = \\frac{\\pi}{2} + \\pi n, n\\in \\mathbb{Z}$",
+    "correct_option": "C",
+    "topic": "Trigonometric Equations"
+  },
+  {
+    "id": 87,
+    "question_text": "The perimeter of a triangle is 24 cm. The lengths of its sides are in the ratio $3:4:5$. Find the length of the longest side.",
+    "option_a": "6 cm",
+    "option_b": "8 cm",
+    "option_c": "10 cm",
+    "option_d": "12 cm",
+    "correct_option": "C",
+    "topic": "Proportions"
+  },
+  {
+    "id": 88,
+    "question_text": "Find the root of the equation: $5^{x+1} = 25^{2}$.",
+    "option_a": "$x=2$",
+    "option_b": "$x=3$",
+    "option_c": "$x=4$",
+    "option_d": "$x=5$",
+    "correct_option": "B",
+    "topic": "Exponential Equations"
+  },
+  {
+    "id": 89,
+    "question_text": "Find the modulus of the number: $|-5 + 2i|$.",
+    "option_a": "$\\sqrt{29}$",
+    "option_b": "$3$",
+    "option_c": "$7$",
+    "option_d": "$29$",
+    "correct_option": "A",
+    "topic": "Complex Numbers"
+  },
+  {
+    "id": 90,
+    "question_text": "Which of the vectors is perpendicular to the vector $\\vec{a}(1; -2)$?",
+    "option_a": "$\\vec{b}(2; 1)$",
+    "option_b": "$\\vec{c}(1; 2)$",
+    "option_c": "$\\vec{d}(-1; -2)$",
+    "option_d": "$\\vec{e}(2; -1)$",
+    "correct_option": "A",
+    "topic": "Vectors"
+  },
+  {
+    "id": 91,
+    "question_text": "How many integer solutions does the inequality $\\frac{x-3}{x+1} < 0$ have?",
+    "option_a": "$2$",
+    "option_b": "$3$",
+    "option_c": "$4$",
+    "option_d": "$5$",
+    "correct_option": "B",
+    "topic": "Rational Inequalities"
+  },
+  {
+    "id": 92,
+    "question_text": "Find the surface area of a sphere with a radius of 2 cm.",
+    "option_a": "$4\\pi\\text{ cm}^2$",
+    "option_b": "$8\\pi\\text{ cm}^2$",
+    "option_c": "$16\\pi\\text{ cm}^2$",
+    "option_d": "$32\\pi\\text{ cm}^2$",
+    "correct_option": "C",
+    "topic": "Stereometry"
+  },
+  {
+    "id": 93,
+    "question_text": "Calculate the value of the expression $\\sqrt{18} - 2\\sqrt{2}$.",
+    "option_a": "$3\\sqrt{2}$",
+    "option_b": "$\\sqrt{2}$",
+    "option_c": "$0$",
+    "option_d": "$2\\sqrt{2}$",
+    "correct_option": "B",
+    "topic": "Roots and Radicals"
+  },
+  {
+    "id": 94,
+    "question_text": "Solve the equation: $\\frac{x^2 - 4}{x-2} = 0$.",
+    "option_a": "$x=-2$",
+    "option_b": "$x=2$",
+    "option_c": "$x=\\pm 2$",
+    "option_d": "The equation has no solutions",
+    "correct_option": "A",
+    "topic": "Rational Equations"
+  },
+  {
+    "id": 95,
+    "question_text": "Find the value of $\\log_{a} a^3$.",
+    "option_a": "$a$",
+    "option_b": "$3$",
+    "option_c": "$1$",
+    "option_d": "$a^2$",
+    "correct_option": "B",
+    "topic": "Logarithms"
+  },
+  {
+    "id": 96,
+    "question_text": "The length of the segment $AB$ with endpoints $A(1; 3)$ and $B(4; 7)$ is:",
+    "option_a": "$5$",
+    "option_b": "$\\sqrt{13}$",
+    "option_c": "$7$",
+    "option_d": "$\\sqrt{7}$",
+    "correct_option": "A",
+    "topic": "Analytical Geometry"
+  },
+  {
+    "id": 97,
+    "question_text": "Which function is the inverse of $y = 2x - 1$?",
+    "option_a": "$y = \\frac{1}{2x-1}$",
+    "option_b": "$y = \\frac{x+1}{2}$",
+    "option_c": "$y = 1 - 2x$",
+    "option_d": "$y = x + 1$",
+    "correct_option": "B",
+    "topic": "Functions"
+  },
+  {
+    "id": 98,
+    "question_text": "The first term of an arithmetic progression is 10, and the common difference is 3. Find the fourth term.",
+    "option_a": "$13$",
+    "option_b": "$16$",
+    "option_c": "$19$",
+    "option_d": "$22$",
+    "correct_option": "C",
+    "topic": "Arithmetic Progression"
+  },
+  {
+    "id": 99,
+    "question_text": "Find the lateral surface area of a regular square prism, whose base side is 5 cm and height is 6 cm.",
+    "option_a": "$120\\text{ cm}^2$",
+    "option_b": "$30\\text{ cm}^2$",
+    "option_c": "$60\\text{ cm}^2$",
+    "option_d": "$150\\text{ cm}^2$",
+    "correct_option": "A",
+    "topic": "Stereometry"
+  },
+  {
+    "id": 100,
+    "question_text": "Calculate $\\text{tg } (45^\\circ) - \\text{ctg } (45^\\circ)$.",
+    "option_a": "$1$",
+    "option_b": "$0$",
+    "option_c": "$2$",
+    "option_d": "$-1$",
+    "correct_option": "B",
+    "topic": "Trigonometry"
+  }
+]
