@@ -11,19 +11,22 @@
         <div>
             {{ question.question_text }}
         </div>
-        <form >
+        <form action="{{ url_for('handle_math_answer', index=current_index) }}"
+              method="POST">
             <input type="hidden" name="question_id" value="{{ question.id }}">
 
             <div class="options">
-                {% set options = [question.option_a, question.option_b, question.option_c, question.option_d] %}
-                {% for option in options %}
-                <label>
+                {% set options = [("A", question.option_a), ("B",
+                question.option_b),
+                ("C", question.option_c), ("D", question.option_d)] %}
+                {% for option_name, text in options %}
+
                     <input type="radio"
                            name="user_answer"
-                           value="{{ option }}"
+                           value="{{ option_name }}"
                            required>
-                    <span>{{ option }}</span>
-                </label>
+                    <span>{{ text }}</span>
+
                 <br>
                 {% endfor %}
             </div>

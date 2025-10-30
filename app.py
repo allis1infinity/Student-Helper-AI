@@ -36,10 +36,10 @@ def home():
 # IDs from the database and saves this unique list into the user's
 # session. It then redirects the user to Question 1.
 def math_start():
-    questions_num = 25
+    questions_num = 5
     questions_ids_list = get_questions(questions_num)
     session['questions_ids_list'] = questions_ids_list
-    session['user_answer'] = {}
+    session['user_answers'] = {}
     return redirect(url_for('show_math_question', index=0))
 
 @app.route('/math/questions/<int:index>')
@@ -59,13 +59,24 @@ def show_math_question(index):
                            current_index=index
                            )
 
-@app.route('/math/answer', methods=['POST'])
+@app.route('/math/answer/<int:index>', methods=['POST'])
 # This is where the user's selection is sent. We simply store the
 # question ID and the user's answer into the session data.
 # We DO NOT check for correctness here. Then, we redirect to the
 # next question.
-def handle_math_answer():
-    pass
+def handle_math_answer(index):
+    question_id = request.form['question_id']
+    user_answer = request.form['user_answer']
+    user_answers = session.get('user_answers', {})
+    user_answers[question_id] = user_answer
+    session['user_answers'] = user_answers
+    session.modified = True
+    next_index = index + 1
+    if next_index >= len(session['questions_ids_list']):
+        return redirect(url_for('show_math_result'))
+    return redirect(url_for('show_math_question', index=next_index))
+
+
 
 @app.route('/math/result')
 #This is the final report page. It takes all the user's answers
@@ -73,7 +84,12 @@ def handle_math_answer():
 # verification, and then displays the total score and the detailed
 # report (right/wrong)."
 def show_math_result():
-    pass
+    questions_ids_list = session.get('questions_ids_list')
+    user_answers = session.get('user_answers')
+
+    return render_template("show_math_result.html",
+                           user_answers=user_answers,
+                           questions_ids_list=questions_ids_list)
 
 
 @app.route('/math/explanation/<int:question_id>')

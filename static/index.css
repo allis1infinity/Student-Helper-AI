@@ -63,6 +63,15 @@ body {
         margin: 40px auto;
     }
 
+    .question-row-result {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .question-row button {
+       margin-left: 20px;
+    }
     header, footer {
         background-color: rgba(64, 43, 78, 0.41);
         color: white;

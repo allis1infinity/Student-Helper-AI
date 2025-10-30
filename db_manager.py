@@ -12,3 +12,7 @@ def get_questions(num_questions):
 def get_one_question(question_id):
     return MathQuestion.query.get(question_id)
 
+def get_correct_answer(question_id):
+    question = MathQuestion.query.get(question_id)
+    return question.correct_answer
+
