@@ -28,10 +28,22 @@ body {
 
     p {
         font-size: 1.1em;
-        text-align: center;
-        max-width: 600px;
-        margin: 0.3em 0;
+
+        max-width: 800px;
+        margin: 0.2em 0;
         line-height: 1.6;
+    }
+
+    .red {
+       color: red;
+    }
+
+    .green {
+        color: green;
+    }
+
+    .black {
+        color: black;
     }
 
     .subjects {
@@ -41,7 +53,7 @@ body {
     a.button {
         display: inline-block;
         text-decoration: none;
-        background-color: #6a1b9a;
+        background-color: #655d68;
         color: white;
         padding: 0.7em 1.4em;
         border-radius: 10px;
@@ -51,7 +63,7 @@ body {
     }
 
     a.button:hover {
-        background-color: #8e24aa;
+        background-color: #c298ca;
     }
 
     a.button.disabled {
@@ -63,15 +75,17 @@ body {
         margin: 40px auto;
     }
 
-    .question-row-result {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-    }
+
 
     .question-row button {
        margin-left: 20px;
     }
+
+    .btn-explanation {
+        display: block;
+        margin-bottom: 40px;
+    }
+
     header, footer {
         background-color: rgba(64, 43, 78, 0.41);
         color: white;

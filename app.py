@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, redirect, url_for, session
 from models import db, MathQuestion
 import os
-from db_manager import get_questions, get_one_question
+from db_manager import get_questions, get_one_question, get_text_correct_answer
 from dotenv import load_dotenv
 app = Flask(__name__)
 
@@ -36,7 +36,7 @@ def home():
 # IDs from the database and saves this unique list into the user's
 # session. It then redirects the user to Question 1.
 def math_start():
-    questions_num = 5
+    questions_num = 3
     questions_ids_list = get_questions(questions_num)
     session['questions_ids_list'] = questions_ids_list
     session['user_answers'] = {}
@@ -86,9 +86,25 @@ def handle_math_answer(index):
 def show_math_result():
     questions_ids_list = session.get('questions_ids_list')
     user_answers = session.get('user_answers')
+    print(user_answers)
+
+    result_list = []
+    for question_id in questions_ids_list:
+        question = get_one_question(question_id)
+        user_answer = (user_answers.get(str(question_id)))
+        correct_answer = get_text_correct_answer(question)
+        print(user_answer)
+
+        result_list.append({ "question_text": question.question_text,
+                             "user_answer": user_answer,
+                             "correct_answer": correct_answer,
+                             "is_correct": user_answer ==
+                                           question.correct_answer })
+    print(result_list)
+
 
     return render_template("show_math_result.html",
-                           user_answers=user_answers,
+                           result = result_list,
                            questions_ids_list=questions_ids_list)
 
 
@@ -102,9 +118,9 @@ def show_math_deep_explanation():
 
 
 if __name__ == '__main__':
-    with app.app_context():
-        db.create_all()
-        print('Database created successfully!')
+    # with app.app_context():
+    #     db.create_all()
+    #     print('Database created successfully!')
     app.run(host='0.0.0.0', port= 5001, debug=True)
 
 

@@ -7,10 +7,19 @@
 {% block content %}
 
     <div>
-        {% for question_id in questions_ids_list %}
-            <div class="question-row-result">
-            {% set user_answer = user_answers[question_id|string] %}
-            <p>Question {{loop.index}} : {{user_answer}}</p>
+        {% for question in result %}
+
+            <p>Question {{loop.index}} : {{question.question_text}}</p>
+
+            <p class="green">Correct answer:
+                {{question.correct_answer[0]}}:
+                <span  class="black">{{question.correct_answer[1]}}</span></p>
+            {%if question.is_correct %}
+                <p class="green">Your answer: {{question.user_answer}}</p>
+            {% else %}
+                <p class="red">Your answer: {{question.user_answer}}</p>
+            {% endif %}
+                <br>
 
             <a href="{{ url_for('math_start') }}" class="btn-explanation">
                 <button type="button">
@@ -18,7 +27,8 @@
                 </button>
             </a>
             <br>
-             </div>
+
         {% endfor %}
     </div>
+
 {% endblock %}

@@ -12,7 +12,19 @@ def get_questions(num_questions):
 def get_one_question(question_id):
     return MathQuestion.query.get(question_id)
 
-def get_correct_answer(question_id):
-    question = MathQuestion.query.get(question_id)
-    return question.correct_answer
+
+def get_text_correct_answer(question):
+
+    if question.correct_answer == 'A':
+        return 'A',question.option_a
+    if question.correct_answer == 'B':
+        return 'B', question.option_b
+    if question.correct_answer == 'C':
+        return 'C',question.option_c
+    if question.correct_answer == 'D':
+        return 'D', question.option_d
+    else:
+        return 'No answer'
+
+
 
