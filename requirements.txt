@@ -1,3 +1,5 @@
 Flask
 SQLAlchemy
 flask-sqlalchemy
+openai
+python-dotenv

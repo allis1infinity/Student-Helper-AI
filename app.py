@@ -1,5 +1,7 @@
 from flask import Flask, render_template, request, redirect, url_for, session
-from models import db, MathQuestion
+
+from ai_explanation import generate_detailed_explanation
+from models import db
 import os
 from db_manager import get_questions, get_one_question, get_text_correct_answer
 from dotenv import load_dotenv
@@ -77,7 +79,6 @@ def handle_math_answer(index):
     return redirect(url_for('show_math_question', index=next_index))
 
 
-
 @app.route('/math/result')
 #This is the final report page. It takes all the user's answers
 # from the session, sends them to our database manager for full
@@ -87,40 +88,70 @@ def show_math_result():
     questions_ids_list = session.get('questions_ids_list')
     user_answers = session.get('user_answers')
     print(user_answers)
+    print(questions_ids_list)
+    total_questions = len(questions_ids_list)
 
     result_list = []
+    correct_count = 0
+
     for question_id in questions_ids_list:
         question = get_one_question(question_id)
         user_answer = (user_answers.get(str(question_id)))
         correct_answer = get_text_correct_answer(question)
-        print(user_answer)
 
-        result_list.append({ "question_text": question.question_text,
+        is_correct = user_answer == question.correct_answer
+        if is_correct:
+            correct_count += 1
+
+        result_list.append({ "id": question.id,
+                             "question_text": question.question_text,
                              "user_answer": user_answer,
                              "correct_answer": correct_answer,
-                             "is_correct": user_answer ==
-                                           question.correct_answer })
-    print(result_list)
+                             "is_correct": is_correct })
 
+    session['result_list'] = result_list
 
-    return render_template("show_math_result.html",
+    return render_template(
+        "show_math_result.html",
                            result = result_list,
-                           questions_ids_list=questions_ids_list)
+                           correct_count = correct_count,
+                           total_questions = total_questions,
+                           questions_ids_list=questions_ids_list
+    )
 
 
-@app.route('/math/explanation/<int:question_id>')
+@app.route('/math/explanation/<int:question_id>/<string:subject_name>')
 # This is our special feature. When the student clicks a button on
 # the result page, this route is triggered. It calls the LLM service
 # to generate a detailed, step-by-step solution for that specific
 # math problem.
-def show_math_deep_explanation():
-    pass
+def show_math_deep_explanation(question_id, subject_name):
+    result_list = session.get('result_list', [])
+    question = None
+    for q in result_list:
+        if q['id'] == question_id:
+            question = q
+            break
+
+    question_text = question['question_text']
+    correct_answer = question['correct_answer']
+    is_correct = question['is_correct']
+
+    ai_explanation_text = generate_detailed_explanation(
+        question_text=question_text,
+        correct_answer=correct_answer,
+        is_correct=is_correct,
+        subject_name=subject_name
+    )
+
+    return render_template('ai_explanation.html',
+                           explanation_text=ai_explanation_text,)
 
 
 if __name__ == '__main__':
     # with app.app_context():
     #     db.create_all()
     #     print('Database created successfully!')
-    app.run(host='0.0.0.0', port= 5001, debug=True)
+    app.run(host='0.0.0.0', port= 5007, debug=True)
 
 

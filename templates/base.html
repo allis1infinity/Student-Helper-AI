@@ -2,20 +2,44 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {% block title %}title{% endblock %}
     <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']]
+    },
+    svg: { fontCache: 'global' }
+  };
+</script>
+<script id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
 </head>
 <body>
-    <header>
-
+    <header class="main-header">
+        <div class="site-container header-content">
+            <a href="{{ url_for('home') }}" class="logo-text">Student Helper AI</a>
+            <nav class="main-nav">
+                </nav>
+        </div>
     </header>
-    <main>
-       {% block content %}{% endblock %}
+    <main class="main-content">
+        <div class="site-container">
+           {% block content %}{% endblock %}
+        </div>
     </main>
-    <footer>
-        &copy; 2025 Student Helper — Learning made simple.
+    <footer class="main-footer">
+        <div class="site-container">
+            <p>&copy; 2025 Student Helper — Learning made simple.</p>
+        </div>
     </footer>
-
+    <script>
+document.addEventListener('DOMContentLoaded', () => {
+  if (window.MathJax) {
+    MathJax.typesetPromise();
+  }
+});
+</script>
 </body>
 </html>

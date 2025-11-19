@@ -5,26 +5,26 @@
 {% endblock %}
 
 {% block content %}
-<section>
-    <h1>🧑‍🏫Welcome to Student Helper AI App!👋🎓</h1>
-</section>
+<div class="site-container">
+    <div class="content-card center-align-text">
+        <h1 class="page-title">Welcome to Student Helper AI App! 🎓</h1>
 
-<section>
-    <p>You’ve just stepped into an important stage of your learning
-        journey.</p>
-    <p>I’m here to help you prepare, practice, and show your best
-            results.</p>
-    <p><strong>Remember:</strong> every small step you take today brings you closer to success tomorrow.</p>
-</section>
-<section>
-<div class="subjects">
-    <p>Select your subject and let’s start your preparation:</p>
-    <div>
-        <a href="{{ url_for('home') }}" class="button">Mathematics</a>
-        <a href="{{ url_for('home') }}" class="button">English</a>
+        <section class="intro-text">
+            <p class="intro-paragraph">You’ve just stepped into an important stage of your learning journey.</p>
+            <p class="intro-paragraph">I’m here to help you prepare, practice, and show your best results.</p>
+            <p class="highlight-text"><strong>Remember:</strong> every small step you take today brings you closer to success tomorrow.</p>
+        </section>
+
+        <hr>
+
+        <section class="subjects-list">
+            <h2 class="section-title">Select your subject and let’s start your preparation:</h2>
+            <div class="subject-grid top-margin-large">
+                <a href="{{ url_for('home') }}" class="main-button">Mathematics</a>
+                <a href="{{ url_for('home') }}" class="main-button">English</a>
+            </div>
+        </section>
+
     </div>
-
 </div>
-</section>
 {% endblock %}
-

@@ -1,15 +1,20 @@
 {% extends 'base.html' %}
+
 {% block title %}
 <title>Math Test Home Page</title>
 {% endblock %}
 
 {% block content %}
-    <h1>Mathematical Quiz</h1>
-    <p>Welcome! Test your knowledge of mathematics.</p>
+    <div class="site-container">
+        <div class="content-card center-align-text" id="math-home-card">
+            <h1 class="page-title">Mathematical Quiz 📐</h1>
+            <p class="intro-paragraph">Welcome! Test your knowledge of mathematics.</p>
 
-    <a href="{{ url_for('math_start') }}">
-        <button type="button">
-            Start Test
-        </button>
-    </a>
+            <a href="{{ url_for('math_start') }}" class="top-margin-large link-style">
+                <button type="button" class="main-button">
+                    Start Test
+                </button>
+            </a>
+        </div>
+    </div>
 {% endblock %}

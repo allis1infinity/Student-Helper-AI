@@ -1,34 +1,46 @@
 {% extends 'base.html' %}
 
 {% block title %}
-<Title>Student Helper – Welcome</Title>
+<Title>Student Helper – Result</Title>
 {% endblock %}
 
 {% block content %}
+    <div class="summary-card center-align-text">
+        <h2 class="section-title">Your Result 🎯</h2>
+        <p class="summary-score-text">You got
+            <span class="highlight-success">{{ correct_count }}</span>
+            correct answers out of <span class="highlight-muted">
+            {{ total_questions }}</span>
+        </p>
+    </div>
 
-    <div>
-        {% for question in result %}
+    {% for question in result %}
+    <div class="question-card">
+        <p class="question-number">Question {{loop.index}} :</p>
+        <p class="question-text-content">{{question.question_text}}</p>
 
-            <p>Question {{loop.index}} : {{question.question_text}}</p>
+        <p class="correct-answer-line">Correct answer:
+        <span class="text-bold">{{question.correct_answer[0]}}:</span>
+        <span class="text-muted">{{question.correct_answer[1]}}</span>
+        </p>
 
-            <p class="green">Correct answer:
-                {{question.correct_answer[0]}}:
-                <span  class="black">{{question.correct_answer[1]}}</span></p>
-            {%if question.is_correct %}
-                <p class="green">Your answer: {{question.user_answer}}</p>
-            {% else %}
-                <p class="red">Your answer: {{question.user_answer}}</p>
-            {% endif %}
-                <br>
+        <p class="user-answer-line">
+                Your answer:
+                {% if question.is_correct %}
+                    <span class="text-bold highlight-success">{{question.user_answer}}</span>
+                {% else %}
+                    <span class="text-bold highlight-error">{{question.user_answer}}</span>
+                {% endif %}
+        </p>
 
-            <a href="{{ url_for('math_start') }}" class="btn-explanation">
-                <button type="button">
+        <div class="card-action-area">
+            <a href="{{ url_for('show_math_deep_explanation', question_id=question.id, subject_name='Math') }}">
+                <button type="button" class="secondary-button small-button">
                     AI Explanation
                 </button>
             </a>
-            <br>
-
-        {% endfor %}
+        </div>
     </div>
+    {% endfor %}
 
 {% endblock %}

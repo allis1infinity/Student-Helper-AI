@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<title>AI Explanation</title>
+{% endblock %}
+
+{% block content %}
+<h3>Welcome to the AI Assistant!</h3>
+<div class="explanation">
+    {{ explanation_text | safe}}
+</div>
+
+<a href="{{ url_for('show_math_result')}}">
+    <button type="button">
+        BACK TO RESULT Page
+    </button>
+</a>
+
+
+{% endblock %}

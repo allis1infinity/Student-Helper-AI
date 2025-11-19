@@ -1,40 +1,44 @@
 {% extends 'base.html' %}
 
-{% block title %}<Title>Student Helper – Welcome</Title>{% endblock %}
+{% block title %}<Title>Display a Question</Title>{% endblock %}
 
 {% block content %}
-
-    <div>
-        <h4>
-            Question {{ current_index + 1 }} from {{ total_questions }}
-        </h4>
-        <div>
-            {{ question.question_text }}
+    <div class="question-form-area">
+        <div class="progress-info">
+            <p class="progress-text">
+                Question <span class="highlight-primary">{{ current_index + 1 }} from {{ total_questions }}</span>
+            </p>
         </div>
-        <form action="{{ url_for('handle_math_answer', index=current_index) }}"
-              method="POST">
-            <input type="hidden" name="question_id" value="{{ question.id }}">
-
-            <div class="options">
-                {% set options = [("A", question.option_a), ("B",
-                question.option_b),
-                ("C", question.option_c), ("D", question.option_d)] %}
-                {% for option_name, text in options %}
-
-                    <input type="radio"
-                           name="user_answer"
-                           value="{{ option_name }}"
-                           required>
-                    <span>{{ text }}</span>
-
-                <br>
-                {% endfor %}
+        <div class="content-card question-details">
+            <div class="question-text-content">
+            {{ question.question_text }}
             </div>
-            <div>
-                <button type="submit">Submit</button>
-            </div>
-        </form>
 
+            <form action="{{ url_for('handle_math_answer', index=current_index) }}"
+                  method="POST">
+                <input type="hidden" name="question_id" value="{{ question.id }}">
+
+                <div class="options-group">
+                    {% set options = [("A", question.option_a), ("B",
+                    question.option_b),
+                    ("C", question.option_c), ("D", question.option_d)] %}
+
+                    {% for option_name, text in options %}
+                        <div class="option-item-simple">
+                            <input type="radio"
+                                   name="user_answer"
+                                   value="{{ option_name }}"
+                                   required>
+                            <span class="option-display">{{ text }}</span>
+                        </div>
+                    <br>
+                    {% endfor %}
+                </div>
+                <div class="form-action">
+                    <button type="submit" class="main-button">Submit</button>
+                </div>
+            </form>
+        </div>
     </div>
 
 {% endblock %}
