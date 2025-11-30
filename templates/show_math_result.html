@@ -34,7 +34,8 @@
         </p>
 
         <div class="card-action-area">
-            <a href="{{ url_for('show_math_deep_explanation', question_id=question.id, subject_name='Math') }}">
+            <a
+                    href="{{ url_for('show_deep_explanation', question_id=question.id, subject_name='math') }}">
                 <button type="button" class="secondary-button small-button">
                     AI Explanation
                 </button>

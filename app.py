@@ -1,10 +1,14 @@
 from flask import Flask, render_template, request, redirect, url_for, session
-
-from ai_explanation import generate_detailed_explanation
+from dotenv import load_dotenv
+from ai_explanation import (generate_detailed_explanation,
+                                 generate_chat_response,
+                                 initialize_chat_history)
 from models import db
+import redis
+from flask_session import Session
 import os
 from db_manager import get_questions, get_one_question, get_text_correct_answer
-from dotenv import load_dotenv
+
 app = Flask(__name__)
 
 basedir = os.path.abspath(os.path.dirname(__file__))
@@ -18,6 +22,11 @@ load_dotenv()
 app.secret_key = os.getenv('FLASK_SECRET_KEY')
 app.config['SQLALCHEMY_DATABASE_URI'] = f'sqlite:///{db_file_name}'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+app.config["SESSION_TYPE"] = "redis"
+app.config["SESSION_PERMANENT"] = False
+app.config["SESSION_USE_SIGNER"] = True
+app.config["SESSION_REDIS"] = redis.StrictRedis(host='localhost', port=6379, db=0)
+Session(app)
 
 db.init_app(app)
 
@@ -55,6 +64,11 @@ def show_math_question(index):
     question_id = questions_ids_list[index]
 
     question_to_show = get_one_question(question_id)
+
+    session.pop('current_question_id', None)
+    session.pop('current_explanation_text', None)
+    session.pop('chat_history', None)
+
     return render_template('show_question.html',
                            question=question_to_show,
                            total_questions=total_questions,
@@ -120,33 +134,58 @@ def show_math_result():
     )
 
 
-@app.route('/math/explanation/<int:question_id>/<string:subject_name>')
-# This is our special feature. When the student clicks a button on
-# the result page, this route is triggered. It calls the LLM service
-# to generate a detailed, step-by-step solution for that specific
-# math problem.
-def show_math_deep_explanation(question_id, subject_name):
-    result_list = session.get('result_list', [])
-    question = None
-    for q in result_list:
-        if q['id'] == question_id:
-            question = q
-            break
+@app.route('/explanation/<int:question_id>/<string:subject_name>')
+# This route performs two main tasks: generates the static explanation and
+# initializes the chat session.
+def show_deep_explanation(question_id, subject_name):
 
-    question_text = question['question_text']
-    correct_answer = question['correct_answer']
-    is_correct = question['is_correct']
+    if session.get('current_question_id') != question_id :
+        session['current_question_id'] = question_id
 
-    ai_explanation_text = generate_detailed_explanation(
-        question_text=question_text,
-        correct_answer=correct_answer,
-        is_correct=is_correct,
-        subject_name=subject_name
-    )
+        result_list = session.get('result_list', [])
+        question = None
+        for q in result_list:
+            if q['id'] == question_id:
+                question = q
+                break
+
+        ai_explanation_text = generate_detailed_explanation(
+            question_text=question['question_text'],
+            correct_answer=question['correct_answer'],
+            is_correct=question['is_correct'],
+            subject_name=subject_name
+        )
+
+        session['current_explanation_text'] = ai_explanation_text
+
+        # --- CHAT history generation ---
+        session['chat_history'] = initialize_chat_history(question_text=question['question_text'],
+                                                          ai_explanation=ai_explanation_text)
+        session.modified = True
+    else:
+        ai_explanation_text = session.get('current_explanation_text')
 
     return render_template('ai_explanation.html',
-                           explanation_text=ai_explanation_text,)
+                           explanation_text=ai_explanation_text,
+                           question_id=question_id,
+                           subject_name=subject_name)
 
+@app.route('/chat/submit/<int:question_id>/<string:subject_name>', methods=[
+    'POST'])
+def handle_chat_submit(question_id, subject_name):
+    user_message = request.form.get('user_message')
+    chat_history = session.get('chat_history', [])
+
+    if user_message and chat_history:
+        chat_history.append({"role": "user", "content": user_message})
+
+        ai_chat_response_text = generate_chat_response(chat_history)
+        chat_history.append({"role": "assistant", "content": ai_chat_response_text})
+
+        session['chat_history'] = chat_history
+        session.modified = True
+
+    return redirect(url_for('show_deep_explanation', question_id=question_id, subject_name=subject_name))
 
 if __name__ == '__main__':
     # with app.app_context():

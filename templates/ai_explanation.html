@@ -6,15 +6,38 @@
 
 {% block content %}
 <h3>Welcome to the AI Assistant!</h3>
-<div class="explanation">
-    {{ explanation_text | safe}}
-</div>
+
 
 <a href="{{ url_for('show_math_result')}}">
-    <button type="button">
-        BACK TO RESULT Page
+    <button type="button" class="btn-back">
+        ⬅ Back to Results
     </button>
 </a>
 
+<div id="chat-widget">
+    <h3>💬 Chat with your AI Tutor</h3>
+
+    <div id="chat-history">
+        {% for message in session.get('chat_history', []) %}
+            {% if message.role != 'system' %}
+                <div class="chat-message {{ 'user-message' if message.role == 'user' else 'ai-message' }}">
+                    <strong>{{ message.role.capitalize() }}:</strong> {{ message.content | safe }}
+                </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+
+    <form method="POST"
+          action="{{ url_for('handle_chat_submit', question_id=question_id, subject_name=subject_name) }}"
+          class="chat-form">
+
+        <input type="text"
+               name="user_message"
+               placeholder="Ask a follow-up question..."
+               required>
+
+        <button type="submit">Send</button>
+    </form>
+</div>
 
 {% endblock %}
